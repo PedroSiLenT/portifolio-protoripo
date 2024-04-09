@@ -123,7 +123,7 @@ nav ul li a:hover {
 
 /* APRESENTAÇÃO */
 
-#apresentacao {
+#home {
     max-width: 1100px;
     margin: auto;
     color: white;
@@ -137,12 +137,12 @@ nav ul li a:hover {
     height: 350px;
 }
 
-#apresentacao h1 {
+#home h1 {
     letter-spacing: 1px;
     font-size: 40px;
 }
 
-#apresentacao p {
+#home p {
     max-width: 510px;
     font-family: "Work Sans", sans-serif;
     font-weight: 300;
@@ -150,7 +150,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-#apresentacao img {
+#home img {
     display: none;
 }
 
@@ -158,13 +158,13 @@ nav ul li a:hover {
     color: #9624fa;
 }
 
-#apresentacao  .icons a {
+#home  .icons a {
     font-size: 30px;
     margin: 5px;
     color: white;
 }
 
-#apresentacao  .icons i:hover {
+#home  .icons i:hover {
     color: #9624fa;
 }
 
@@ -270,11 +270,8 @@ body.dark .icons i{
     color: #9624fa;
 }
 
-body.dark .icons2 i:hover {
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 3px 0px #9624fa77;
-    transform: translate(-3px, -3px);
-    transition: .1s;
+body.dark .icons i:hover {
+    color: black;
 }
 
 /* ANIMAÇOES */
@@ -333,14 +330,32 @@ body.dark .icons2 i:hover {
 }
 
 @media (max-width: 1000px){
-    #apresentacao {
+    #home {
         display: block;
         background-image: url(none);
-        margin-left: 100px;
-}
+        text-align: center;
+    }
 
-    #apresentacao img {
-        display: block;
+    .icons {
         padding-top: 20px;
+    }
+    
+    #home h1 {
+        font-size: max(25px, 5vw);
+    }
+
+    .txt-animado h1 {
+        font-size: max(25px, 5vw);
+    }
+
+    #home p {
+        margin: auto;
+    }
+
+    #home img {
+        width: max(350px, 50vw);
+        display: block;
+        margin: auto;
+        padding-top: 50px;
     }
 }
