@@ -274,6 +274,15 @@ body.dark .icons i:hover {
     color: black;
 }
 
+body.dark #sobre-mim p {
+    color: black
+}
+
+body.dark #sobre-mim h1 {
+    color: #9624fa;
+    text-shadow: none;
+}
+
 /* SOBRE MIM */
 
 #sobre-mim {
@@ -302,6 +311,7 @@ body.dark .icons i:hover {
 
 #sobre-mim ul {
     text-align: center;
+    list-style: none;
 }
 
 #sobre-mim a {
