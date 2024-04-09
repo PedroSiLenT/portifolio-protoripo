@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100 to 900;
+    font-style: normal;
+  }
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor0: #190571;
+    --cor1: #ce739b;
+    --cor2: #c05abe;
+    --cor3: #9624fa;
+    --cor4: #5b0bed;
+    --cor5: #5b0bed;
+}
+
+body {
+    background-color: black;
+}
+
+#menu {
+    border-bottom: 1px solid #9624fa52;
+}
+
+.menu-content {
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+    padding: 30px;
+}
+
+
+.menu-content h2 {
+    color: rgb(255, 255, 255);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+nav {
+    margin: auto;
+}
+
+nav ul li {
+    display: inline;
+    color: white;
+}
+
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 3px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: #9624fa;
+    transition: 0.2s;
+}
+/* MENU BUTTON*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: black;
+    box-shadow: 1px 1px 10px #9624fa3f;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.sidebar li {
+    margin-bottom: 40px;
+}
+
+.sidebar a {
+    padding: 20px;
+    padding-inline: 25%;
+}
+
+.sidebar a:hover {
+    background: #9624fa;
+    border-radius: 250px;
+    color: white;
+}
+
+.btn-menu a {
+    display: inline;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-close i {
+    font-size: 26px;
+}
+
+/* APRESENTAÇÃO */
+
+#apresentacao {
+    max-width: 1100px;
+    margin: auto;
+    color: white;
+    margin-top: 100px;
+    padding: 60px;
+
+    background-image: url(imagens/6491428-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 350px;
+}
+
+#apresentacao h1 {
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+#apresentacao p {
+    max-width: 510px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#apresentacao img {
+    display: none;
+}
+
+.destaque {
+    color: #9624fa;
+}
+
+#apresentacao  .icons a {
+    font-size: 30px;
+    margin: 5px;
+    color: white;
+}
+
+#apresentacao  .icons a:hover {
+    color: #9624fa;
+    transition: 0.2s;
+}
+
+/* TEXTO ANIMADO*/
+
+.txt-animado {
+    font-size: 40px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.txt-animado h1 {
+    display: none;
+}
+
+.txt-animado span {
+    position: relative;
+}
+
+.txt-animado span::before {
+    content: "";
+    animation: text 30s infinite;
+}
+
+.txt-animado span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #9624fa;
+    right: -10px;
+    animation: cursor .7s infinite, digitar 30s steps(80) infinite;
+    width: calc(100% + 15px);
+    background-color: black;
+}
+
+/* BUTTON NIGHT MODE*/
+
+.trilho {
+    display: flex;
+    width: 60px;
+    height: 30px;
+    background-color: #9624fa;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+}
+
+.trilho .indicador {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(0.8);
+    position: absolute;
+    left: 0;
+    transition: 0.3s ease-in;
+}
+
+.trilho.dark {
+    background-color: black;
+}
+
+.trilho.dark .indicador {
+    left: 30px;
+    background-color: #9624fa;
+}
+
+body.dark {
+    background-color: rgb(255, 255, 255);
+}
+
+body.dark h1 {
+    color: black;
+}
+
+body.dark h2 {
+    color: black;
+}
+
+body.dark a {
+    color: black;
+}
+
+body.dark h3 {
+    color: black;
+}
+
+body.dark p {
+    color: black;
+}
+
+body.dark .txt-animado span::after {
+    background-color: white;
+}
+
+body.dark .txt-animado {
+    color: black;
+}
+
+/* ANIMAÇOES */
+
+@keyframes digitar {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 90% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 15px);
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid black;
+    }
+}
+
+@keyframes text {
+    0%,100% {
+        content: "Desenvolvedor Full-stack";
+    }
+}
+
+/* MEDIA QUERY */
+
+@media (max-width:650px){
+    .txt-animado span {
+        display: none;
+    }
+    .txt-animado h1 {
+        display: block;
+    }
+
+    .imgresponsiva img {
+        width: 350px;
+    }
+    
+}
+
+@media (max-width:800px) {
+    .hidebar {
+        display: none;
+    }
+
+    .btn-menu a {
+        display: inline-block;
+    }
+
+    .trilho {
+        display: flex;
+        margin-left: 40px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px){
+    #apresentacao {
+        display: block;
+        background-image: url(none);
+    }
+
+    #apresentacao img {
+        display: block;
+        margin: auto;
+    }
+}
