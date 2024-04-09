@@ -164,9 +164,11 @@ nav ul li a:hover {
     color: white;
 }
 
-#apresentacao  .icons a:hover {
+#apresentacao  .icons i:hover {
     color: #9624fa;
-    transition: 0.2s;
+    text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.11);
+    transform: translate(-3px, -3px);
+    transition: .1s;
 }
 
 /* TEXTO ANIMADO*/
@@ -267,6 +269,17 @@ body.dark .txt-animado {
     color: black;
 }
 
+body.dark .icons i{
+    color: #9624fa;
+}
+
+body.dark .icons i:hover {
+    color: black;
+    text-shadow: 3px 3px 0px #9624fa77;
+    transform: translate(-3px, -3px);
+    transition: .1s;
+}
+
 /* ANIMAÇOES */
 
 @keyframes digitar {
@@ -292,7 +305,7 @@ body.dark .txt-animado {
 
 /* MEDIA QUERY */
 
-@media (max-width:650px){
+@media (max-width:710px){
     .txt-animado span {
         display: none;
     }
@@ -326,10 +339,11 @@ body.dark .txt-animado {
     #apresentacao {
         display: block;
         background-image: url(none);
-    }
+        margin-left: 100px;
+}
 
     #apresentacao img {
         display: block;
-        margin: auto;
+        padding-top: 20px;
     }
 }
