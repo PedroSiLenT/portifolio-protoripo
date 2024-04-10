@@ -297,6 +297,7 @@ body.dark #sobre-mim h1 {
     text-align: center;
     padding-top: 20px;
     text-shadow: 1px 1px 5px #9624fa;
+    font-family: "Work Sans", sans-serif;
 }
 
 #sobre-mim p {
@@ -305,8 +306,8 @@ body.dark #sobre-mim h1 {
     padding-top: 50px;
     padding-left: 10px;
     line-height: 1.5;
-    letter-spacing: 0.2px;
     text-align: justify;
+    font-family: "Work Sans", sans-serif;
 }
 
 #sobre-mim ul {
@@ -328,14 +329,72 @@ body.dark #sobre-mim h1 {
 }
 
 .container img {
-    width: min(300px, 40vw);
+    width: 250px;
     padding: 20px;
-    padding-top: 30px;
     box-shadow: -5px -5px 4px #9624fa;
+}
+
+/* PROJETOS */
+
+#projetos {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#projetos h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px #9624fa;
+    padding-top: 200px;
+    font-family: "Work Sans", sans-serif;
+}
+
+#projetos h2 {
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    font-size: medium;
+    
+}
+
+#projetos p {
+    color: white;
+    font-family: "Work Sans", sans-serif;
+}
+
+#projetos img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.container-p {
+    display: flex;
+    align-items: center;
+}
+
+.container-p p {
+    max-width: 400px;
+    margin: 25px;
+    margin-top: 0;
 }
 
 
 
+
+
+
+
+
+
+
+/* MINHAS HABILIDADES */
+
+#skills h1 {
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
 
 
 
@@ -438,5 +497,13 @@ body.dark #sobre-mim h1 {
         display: block;
         margin: auto;
         padding-top: 50px;
+    }
+
+    .container img {
+        width: max(200px, 5vw);
+    }
+
+    #sobre-mim ul {
+        margin-top: 30px;
     }
 }
