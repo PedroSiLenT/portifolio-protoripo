@@ -385,7 +385,6 @@ body.dark #sobre-mim h1 {
     text-decoration: none;
     color: white;
     font-family: "Work Sans", sans-serif;
-    margin: 10px;
     border: 2px solid #9624fa;
     padding: 10px;
     border-radius: 10px;
@@ -492,12 +491,14 @@ body.dark #sobre-mim h1 {
     }
 
     .container p {
-        width: 400px;
+        width: 300px;
         margin: auto;
+        font-size: 15px;
     }
 
     #projetos {
         padding-top: 250px;
+        width: 350px;
     }
 
     .container-p {
@@ -508,6 +509,10 @@ body.dark #sobre-mim h1 {
     .container-p p {
         margin: auto;
         text-align: justify;
+    }
+
+    .container-p a {
+        margin: auto;
     }
 
     #c1 p {
