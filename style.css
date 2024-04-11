@@ -355,7 +355,7 @@ body.dark #sobre-mim h1 {
     text-align: center;
     margin-top: 100px;
     font-size: medium;
-    
+    padding-bottom: 30px;
 }
 
 #projetos p {
@@ -371,6 +371,8 @@ body.dark #sobre-mim h1 {
 .container-p {
     display: flex;
     align-items: center;
+    margin-bottom: 150px;
+    letter-spacing: 1.5;
 }
 
 .container-p p {
@@ -393,15 +395,9 @@ body.dark #sobre-mim h1 {
     color: #9624fa;
 }
 
-.container-b img {
-    display: block;
-    margin-left: auto;
-    margin-top: 100px;
+#c2 p {
+    padding-top: 20px;
 }
-
-
-
-
 
 
 
