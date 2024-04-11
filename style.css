@@ -283,6 +283,45 @@ body.dark #sobre-mim h1 {
     text-shadow: none;
 }
 
+body.dark #sobre-mim a {
+    color: black;
+}
+
+body.dark #sobre-mim i {
+    color: black;
+}
+
+body.dark #projetos h1 {
+    color: #9624fa;
+    text-shadow: none;
+}
+
+body.dark #projetos h2 {
+    color: black;
+    text-shadow: none;
+}
+
+body.dark #projetos p {
+    color: black;
+}
+
+body.dark #projetos img {
+    border: 1px solid #9624fa;
+}
+
+body.dark #skills h1 {
+    color: black;
+}
+
+body.dark #skills ul {
+    list-style: none;
+}
+
+body.dark #contato h1 {
+    text-shadow: none;
+}
+
+
 /* SOBRE MIM */
 
 #sobre-mim {
@@ -502,13 +541,6 @@ body.dark #sobre-mim h1 {
 .footer-content a:hover {
     color: #9624fa;
 }
-
-
-
-
-
-
-
 
 /* ANIMAÇOES */
 
