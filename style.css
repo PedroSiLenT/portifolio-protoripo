@@ -436,14 +436,72 @@ body.dark #sobre-mim h1 {
     transition: .1s;
 }
 
+/* CONTATOS */
 
+#contato {
+    color: white;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
 
+#contato h1 {
+    text-shadow: 1px 1px 5px #9624fa;
+    padding-top: 200px;
+}
 
+#contato a {
+    color: white;
+    font-size: 30px;
+}
 
+.contatow i {
+    font-size: 30px;
+    color: #9624fa;
+}
 
+.contatow {
+    padding: 20px;
+}
 
+.contatog i {
+    font-size: 30px;
+    color: #9624fa;
+}
 
+.contatog {
+    padding: 20px;
+}
 
+/* FOOTER */
+
+#footer {
+    padding-top: 50px;
+    border-top: 1px solid #9624fa;
+    padding: 40px;
+}
+
+.footer-content {
+    text-align: center;
+    line-height: 30px;
+}
+
+.footer-content h3 {
+    color: white;
+}
+
+.footer-content p {
+    color: white;
+}
+
+.footer-content a {
+    color: white;
+    font-size: 25px;
+}
+
+.footer-content a:hover {
+    color: #9624fa;
+}
 
 
 
