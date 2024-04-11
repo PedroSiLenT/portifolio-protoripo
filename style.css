@@ -379,6 +379,25 @@ body.dark #sobre-mim h1 {
     margin-top: 0;
 }
 
+.container-p a {
+    text-decoration: none;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    margin: 10px;
+    border: 2px solid #9624fa;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-p a:hover {
+    color: #9624fa;
+}
+
+.container-b img {
+    display: block;
+    margin-left: auto;
+    margin-top: 100px;
+}
 
 
 
