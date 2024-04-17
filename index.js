@@ -8,7 +8,6 @@ function hideSidebar() {
     sidebar.style.display = 'none'
 }
 
-
 let trilho = document.getElementById('trilho')
 let body = document.querySelector('body')
 
