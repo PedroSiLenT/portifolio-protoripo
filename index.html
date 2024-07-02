@@ -12,15 +12,15 @@
         <div class="menu-content">
             <h2> &lt;/&gt; Pedro Henrique &lt;/&gt;</h2>
                 <nav>
-                    <ul class="sidebar">
-                        <li><a href="#" class="btn-close" onclick=hideSidebar()><i class='bx bx-x'></i></a></li>
+                    <ul class="sidebar" onmouseleave=hideSidebar()>
+                        <li><a href="#" class="btn-close"><i class='bx bx-x'></i></a></li>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#sobre-mim">Sobre mim</a></li>
                         <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
-                    <ul>
+                    <ul id="hide_bar">
                         <li class="hidebar"><a href="#home">Home</a></li>
                         <li class="hidebar"><a href="#sobre-mim">Sobre mim</a></li>
                         <li class="hidebar"><a href="#projetos">Projetos</a></li>
@@ -29,7 +29,7 @@
                     </ul>
                 </nav>
                 <div class="btn-menu">
-                    <a href="#" onclick=showSidebar()><i class='bx bx-menu' ></i></a>
+                    <a href="#" onmouseenter=showSidebar()><i class='bx bx-menu' ></i></a>
                 </div>
                 <div class="trilho" id="trilho">
                     <div class="indicador"></div>
