@@ -1,13 +1,20 @@
-function showSidebar() {
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
-}
+const hamburguer = document.querySelector('#hamburguer')
+const menu = document.querySelector('.sidebar')
+const menuClose = document.querySelector('.btn-close')
 
-function hideSidebar() {
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'none'
-}
+hamburguer.addEventListener('click', () => {
+    menu.classList.toggle('open')
+})
 
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 800) {
+        menu.classList.remove('open')
+    }
+})
+
+menuClose.addEventListener('click', () => {
+    menu.classList.remove('open')
+}) 
 let trilho = document.getElementById('trilho')
 let body = document.querySelector('body')
 

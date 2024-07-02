@@ -595,6 +595,10 @@ body.dark #contato h1 {
         display: none;
     }
 
+    .sidebar.open {
+        display: flex;
+    }
+
     .btn-menu a {
         display: inline-block;
     }
