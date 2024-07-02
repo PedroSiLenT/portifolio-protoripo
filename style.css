@@ -321,6 +321,10 @@ body.dark #contato h1 {
     text-shadow: none;
 }
 
+body.dark .sidebar {
+    background-color: white;
+}
+
 
 /* SOBRE MIM */
 
