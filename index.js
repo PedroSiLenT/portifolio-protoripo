@@ -22,3 +22,23 @@ trilho.addEventListener('click', ()=>{
     trilho.classList.toggle('dark')
     body.classList.toggle('dark')
 })
+
+let btnTopo = document.querySelector('#btnTopo')
+
+window.onscroll = function () {
+    scrollFunction()
+}
+
+function scrollFunction () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btnTopo.style.display = 'block'
+    } else {
+        btnTopo.style.display = 'none'
+    }
+}
+
+
+function backTop () {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+}
