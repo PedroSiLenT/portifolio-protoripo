@@ -327,6 +327,11 @@ body.dark .sidebar {
     background-color: white;
 }
 
+body.dark #btnTopo {
+    color: #9624fa;
+    box-shadow: 1px 1px 10px #9624fa;
+}
+
 
 /* SOBRE MIM */
 
@@ -707,13 +712,14 @@ body.dark .sidebar {
     z-index: 99; 
     border: none; 
     outline: none;
-    background-color: #9624fa;
+    background-color: transparent;
     color: white;
     cursor: pointer;
     padding: 15px;
     padding-bottom: 13px;
     border-radius: 50%;
     font-size: 16px;
+    box-shadow: 1px 1px 10px #9624faa8;
 }
 
 #btnTopo:hover {
